@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="images/ico.png" type="image/icon" />
+<title>Attendance Manager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/photo_bg.jpg");
+    min-height: 100%;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4caf4e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+#modalform{
+font-family: "Times New Roman", Georgia, Serif;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 27%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 50%%;
+    }
+}
+.signup{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size:40px;
+  font-weight:lighter;
+}
+.fclt{
+  font-family: 'Sofia';
+  font-size:30px;
+  font-style: italic;
+color: green;
+}
+* {
+    box-sizing: border-box;
+}
+.vl {
+    border-left: 2px solid blue;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    margin-top:350px;
+    margin-left: -3px;
+    top: 0;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100%;
+    padding: 10px 50px;
+    height: 100%; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.modal-content3{
+  background-color: #ccc;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width:27%; /* Could be more or less, depending on screen size */
+}
+.sbutton{border-radius: 8px;width: 47%; margin-left: 25%;}
+</style>
+<body>
+<!-- Navbar (sit on top)-->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+    <a href="courseoffered.html" class="w3-bar-item w3-button w3-hover-red">Course Offered</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-purple">ABOUT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a class="w3-button w3-hover-green">Sign Up</a>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a onclick="document.getElementById('id03').style.display='block'" class="w3-bar-item w3-button w3-hover-aqua">Faculty</a>
+        <a onclick="document.getElementById('id04').style.display='block'" class="w3-bar-item w3-button w3-hover-pink">Student</a>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Attendance<br>Manager</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px">Attendance<br>Manager</span>
+<br>
+  <button class="w3-round-xlarge w3-black w3-xxlarge w3-hover-red" onclick="document.getElementById('id01').style.display='block'" style="width:auto" id="facultylogin">Faculty LogIn</button>
+  <button class="w3-round-xlarge w3-black w3-xxlarge w3-hover-purple" onclick="document.getElementById('id02').style.display='block'" style="width:auto" id="studentlogin">Student LogIn</button>
+</div>
+
+  <div id="id01" class="modal">
+    <form class="modal-content animate" id="modalform" method="POST" action="authenticatefaculty.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="images/prof/6.jpeg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <input type="text" placeholder="Enter Email-Id" name="facultyloginid" required>
+        <input type="password" placeholder="Enter Password" name="facultyloginpassword" required>
+
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn w3-red">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="id02" class="modal">
+    <form class="modal-content animate" id="modalform"  method="POST" action="authenticatestudent.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="images/student/6.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <input type="text" placeholder="Enter Roll Number" name="rollnologin" required>
+        <input type="password" placeholder="Enter Password" name="studentloginpassword" required>
+
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+      </div>
+    </form>
+    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn  w3-red">Cancel</button>
+  </div>
+
+  <!--SIGNUP Faculty-->
+  <div id="id03" class="modal">
+    <form class="modal-content3 animate" id="modalform"   method="post" action="signupfaculty.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+<center><div class="signup w3-container w3-red">SignUp </div></center>
+      <div class="container">
+<div class="row">
+  <div class="column" style="background-color:#aaa">
+    <div class="fclt" style="text-align:center">Faculty</div>
+    <br>
+      <input type="text" placeholder="First Name" name="facultyfirstname" required>
+      <input type="text" placeholder="Last Name" name="facultylastname" required>
+      <input type="text" placeholder="Email-Id" name="facultysignupid" required>
+      <input type="password" placeholder="Password" name="facultysignuppassword" required>
+      <input type="text" placeholder="Course Teaching" name="courseteaching" required>
+      <button type="submit" class="fbutton" name="fbutton" onclick="ssub()">Submit</button>
+
+  </div>
+</div>
+</div>
+
+</form>
+</div>
+<!--  signup Student -->
+<div id="id04" class="modal">
+  <form class="modal-content3 animate" id="modalform" method="post" action="signupstudent.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+<center><div class="signup w3-container w3-red">SignUp </div></center>
+    <div class="container">
+<div class="row">
+
+  <div class="column" style="background-color:#aaa">
+<div class="fclt" style="text-align:center">Student</div>
+    <input type="text" placeholder="First Name" name="studentfirstname" required>
+    <input type="text" placeholder="Last Name" name="studentlastname" required>
+    <input type="text" placeholder="Roll Number" name="rollnosignup" required>
+    <input type="password" placeholder="Password" name="studentsignuppassword" required>
+    <div class="form-group">
+     <select  class="form-control" required id="department" name="department">
+     <option>Department</option>
+     <option >Computer Science</option>
+     <option >Electrical</option>
+     <option >Mechanical</option>
+     </select>
+    <select class="form-control" required id="semester" name="semester">
+    <option>Semester</option>
+    <option >1st</option>
+    <option >2nd</option>
+    <option >3rd</option>
+    <option >4th</option>
+    <option >5th</option>
+    <option >6th</option>
+    <option >7th</option>
+    <option >8th</option>
+    </select>
+    <br/>
+    <p style="font-size:16px">Subjects:-</p>
+    <input type="checkbox" name="check_list[]" value="Biology"><label>Biology</label>
+    <input type="checkbox" name="check_list[]" value="Calculas"><label>Calculas</label><br/>
+    <input type="checkbox" name="check_list[]" value="Data Analytics"><label>Data Analytics</label><br/>
+    <input type="checkbox" name="check_list[]" value="Differential Equations"><label>Differential Equations</label><br/>
+    <input type="checkbox" name="check_list[]" value="Discrete Structures"><label>Discrete Structures</label><br/>
+    <input type="checkbox" name="check_list[]" value="Fluid Mechanics"><label>Fluid Mechanics</label><br/>
+    <input type="checkbox" name="check_list[]" value="Linear Algebra"><label>Linear Algebra</label><br/>
+    <input type="checkbox" name="check_list[]" value="Solid Mechanics"><label>Solid Mechanics</label><br/>
+   </div>
+
+
+</div>
+        <button type="submit" name="sbutton" onclick="ssub()">Submit</button>
+</div>
+  </div>
+</div>
+      </div>
+    </form>
+  </div>
+
+</header>
+<script>
+function ssub(){
+  alert("SignUp Successful....")
+}
+
+var modal = document.getElementById('id01');
+var modal1 = document.getElementById('id02');
+var modal2 = document.getElementById('id03');
+var modal3 = document.getElementById('id04');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    if(event.target==modal1){
+      modal1.style.display="none";
+    }
+    if(event.target==modal2){
+      modal2.style.display="none";
+    }
+    if(event.target==modal3){
+      modal3.style.display="none";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="images/ico.png" type="image/icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+.nav{
+  font-family: "Amatic SC", sans-serif
+}
+body{
+  margin-top: 6%;
+  background-image: url("images/1.jpg");
+  background-repeat: space;
+  background-size: auto;
+}
+</style>
+<body style="background-color:#eee">
+  <!-- Navbar (sit on top)-->
+  <div class="nav w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+      <a href="courseoffered.html" class="w3-bar-item w3-button w3-hover-red">Course Offered</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hover-purple">ABOUT</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+      <!--SIGNUP-->
+      <div class="w3-dropdown-hover w3-hide-small">
+        <a class="w3-button w3-hover-green">Sign Up</a>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a onclick="document.getElementById('id03').style.display='block'" class="w3-bar-item w3-button w3-hover-aqua">Faculty</a>
+          <a onclick="document.getElementById('id04').style.display='block'" class="w3-bar-item w3-button w3-hover-pink">Student</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-content" style="max-width: 800px">
+    <div class="w3-left-align" id="myTable">
+      <h3 style="color:brown;">All Branches (2017 Batch Onwards)</h3>
+      <h4>Semester I</h4>
+      <table class="w3-table-all w3-hoverable w3-responsive w3-left-align">
+        <tr>
+          <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+          <tr onclick="document.getElementById('ce111').style.display='block'">
+            <td width="5%">1</td><td width="9%">MA 105</td><td>Calculus</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+            <tr><td width="5%">2</td><td width="9%">PH 107</td><td>Quantum Physics</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+            <tr><td width="5%">3</td><td  width="9%">CH 105</td><td>Organic Chemistry and Inorganic Chemistry</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+            <tr><td width="5%">4</td><td  width="9%">CH 107</td><td>Physical Chemistry</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+            <tr><td width="5%">5</td><td  width="9%">CH 117</td><td>Chemistry Lab</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+            <tr><td width="5%">6</td><td  width="9%">CS 101</td><td>Computer Programming</td><td width="5%">3</td><td width="5%">0</td><td width="5%">2</td><td width="5%">8</td></tr>
+            <tr><td width="5%">7</td><td  width="9%">NO 101</td><td>National Sports Organisation</td><td width="5%">0</td><td width="5%">0</td><td width="5%">0</td><td width="5%">P/NP</td></tr>
+            <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">12</td><td>2</td><td width="5%">5</td><td width="5%">33</td></tr></table>
+
+            <h3 id="CSE" style="color:brown;">Computer Science and Engineering (2017 Batch Onwards)</h3>
+            <h4 style="text-align: left;">Semester II</h4>
+            <table class="w3-table-all w3-hoverable w3-responsive">
+              <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+              <tr><td width="5%">1</td><td  width="9%">MA 106</td><td>Linear Algebra</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+              <tr><td width="5%">2</td><td  width="9%">MA 108</td><td>Ordinary Differential Equations</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+              <tr><td width="5%">3</td><td  width="9%">PH 108</td><td>Electricity and Magnetism</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+              <tr><td width="5%">4</td><td  width="9%">CS 113</td><td>Data Structures and Algorithms (DIC)</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+              <tr><td width="5%">5</td><td  width="9%">ME xxx</td><td>Fundamentals of Computer Aided Drawing and Manufacturing (CADM)</td><td width="5%">1.5</td><td width="5%">0</td><td width="5%">5</td><td width="5%">8</td></tr>
+              <tr><td width="5%">6</td><td>CS 193</td><td>Data Structures and Algorithms Lab</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+              <tr><td width="5%">7</td><td  width="9%">PH 117</td><td>Physics Lab</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+              <tr><td width="5%">8</td><td  width="9%">BB 101</td><td>Biology</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+              <tr><td width="5%">9</td><td  width="9%">NO 102</td><td>National Sports Organisation</td><td width="5%">0</td><td width="5%">0</td><td width="5%">0</td><td width="5%">P/NP</td></tr>
+              <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">12.5</td><td width="5%">2</td><td width="5%">11</td><td width="5%">40</td></tr></table>
+
+              <h3 style="color:brown;">Computer Science and Engineering (2016 Batch)</h3>
+
+              <h4 style="text-align: left;">Semester III</h4>
+              <table class="w3-table-all w3-hoverable w3-responsive">
+                <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                <tr><td width="5%">1</td><td  width="9%">CS 207</td><td>Discrete Structures</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                <tr><td width="5%">2</td><td  width="9%">HS 101</td><td>Economics</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                <tr><td width="5%">3</td><td  width="9%">EE 101</td><td>Introduction of Electrical and Electronic Circuits</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                <tr><td width="5%">4</td><td  width="9%">CS 2xD</td><td>Data Analytics</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                <tr><td width="5%">5</td><td  width="9%">CS 2xS</td><td>Software Systems Lab</td><td width="5%">1</td><td width="5%">3</td><td width="5%">0</td><td width="5%">8</td></tr>
+                <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">13</td><td width="5%">4</td><td width="5%">0</td><td width="5%">34</td></tr></table>
+                <h4 style="text-align: left;">Semester IV</h4>
+                <table class="w3-table-all w3-hoverable w3-responsive">
+                  <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                  <tr><td width="5%">1</td><td  width="9%">EE 224</td><td>Digital Systems</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                  <tr><td width="5%">2</td><td  width="9%">EE 214</td><td>Digital Circuits Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                  <tr><td width="5%">3</td><td  width="9%">CS 218</td><td>Design and Analysis of Algorithms</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                  <tr><td width="5%">4</td><td  width="9%">MA 214</td><td>Numerical Analysis</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                  <tr><td width="5%">5</td><td  width="9%">CS 348</td><td>Computer Networks</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                  <tr><td width="5%">6</td><td  width="9%">CS 378</td><td>Computer Networks Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                  <tr><td width="5%">7</td><td  width="9%">CS 310</td><td>Automata Theory</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                  <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">15</td><td width="5%">1</td><td width="5%">6</td><td width="5%">38</td></tr></table>
+
+
+
+                  <h3 id="EE" style="color:brown;">Electrical Engineering (2017 Batch Onwards)</h3>
+                  <h4 style="text-align: left;">Semester II</h4>
+                  <table class="w3-table-all w3-hoverable w3-responsive">
+                    <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                    <tr><td width="5%">1</td><td  width="9%">MA 106</td><td>Linear Algebra</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+                    <tr><td width="5%">2</td><td  width="9%">MA 108</td><td>Ordinary Differential Equations</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+                    <tr><td width="5%">3</td><td  width="9%">PH 108</td><td>Electricity and Magnetism</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                    <tr><td width="5%">4</td><td  width="9%">EE 101</td><td>Introduction to Electrical Systems and Electronics (DIC-1)</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                    <tr><td width="5%">5</td><td  width="9%">ME xxx</td><td>Fundamentals of Computer Aided Drawing and Manufacturing (CADM)</td><td width="5%">1.5</td><td width="5%">0</td><td width="5%">5</td><td width="5%">8</td></tr>
+                    <tr><td width="5%">7</td><td  width="9%">PH 117</td><td>Physics Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                    <tr><td width="5%">8</td><td  width="9%">BB 101</td><td>Biology</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                    <tr><td width="5%">9</td><td  width="9%">NO 102</td><td>National Sports Organisation</td><td width="5%">0</td><td width="5%">0</td><td width="5%">0</td><td width="5%">P/NP</td></tr>
+                    <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">12.5</td><td width="5%">2</td><td width="5%">8</td><td width="5%">37</td></tr></table>
+
+                    <h3 style="color:brown;">Electrical Engineering (2016 Batch)</h3>
+
+                    <h4 style="text-align: left;">Semester III</h4>
+                    <table class="w3-table-all w3-hoverable w3-responsive">
+                      <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                      <tr><td width="5%">1</td><td  width="9%">MA 205</td><td>Mathematics II</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">4</td></tr>
+                      <tr><td width="5%">2</td><td  width="9%">MA 207</td><td>Complex Analysis + DE II</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">4</td></tr>
+                      <tr><td width="5%">3</td><td  width="9%">HS 101</td><td>Economics</td><td width="5%">3</td><td width="5%">0</td><td width="5%">0</td><td width="5%">6</td></tr>
+                      <tr><td width="5%">4</td><td  width="9%">CS 2xD</td><td>Data Analytics</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">4</td></tr>
+                      <tr><td width="5%">5</td><td  width="9%">EE 225</td><td>Network Theory</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                      <tr><td width="5%">6</td><td  width="9%">EE 207</td><td>Electronic Devices</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                      <tr><td width="5%">7</td><td  width="9%">EE 236</td><td>Electronic Devices Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                      <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">15</td><td width="5%">5</td><td width="5%">3</td><td width="5%">35</td></tr></table>
+                      <h4 style="text-align: left;">Semester IV</h4>
+                      <table class="w3-table-all w3-hoverable w3-responsive">
+                        <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                        <tr><td width="5%">1</td><td  width="9%">EE 210</td><td>Signals and Systems</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                        <tr><td width="5%">2</td><td  width="9%">EE 204</td><td>Analog Circuits</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                        <tr><td width="5%">3</td><td  width="9%">EE 222</td><td>Electrical Machines and Power Electronics</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                        <tr><td width="5%">4</td><td  width="9%">EE 224</td><td>Digital Systems</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                        <tr><td width="5%">5</td><td  width="9%">EE 230</td><td>Analog Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                        <tr><td width="5%">6</td><td  width="9%">EE 214</td><td>Digital Circuits Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                        <tr><td width="5%">7</td><td  width="9%">EE 234</td><td>Machines Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                        <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">8</td><td width="5%">4</td><td width="5%">9</td><td width="5%">33</td></tr></table>
+
+
+                        <h3 id="ME" style="color:brown;">Mechanical Engineering (2017 Batch Onwards)</h3>
+                        <h4 style="text-align: left;">Semester II</h4>
+                        <table class="w3-table-all w3-hoverable w3-responsive">
+                          <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                          <tr><td width="5%">1</td><td  width="9%">MA 106</td><td>Linear Algebra</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+                          <tr><td width="5%">2</td><td  width="9%">MA 108</td><td>Ordinary Differential Equations</td><td width="5%">2</td><td width="5%">0</td><td width="5%">0</td><td width="5%">4</td></tr>
+                          <tr><td width="5%">3</td><td  width="9%">PH 108</td><td>Electricity and Magnetism</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                          <tr><td width="5%">4</td><td  width="9%">ME 102</td><td>Engineering Mechanics (DIC)</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                          <tr><td width="5%">5</td><td  width="9%">ME xxx</td><td>Fundamentals of Computer Aided Drawing and Manufacturing (CADM)</td><td width="5%">1.5</td><td width="5%">0</td><td width="5%">5</td><td width="5%">8</td></tr>
+                          <tr><td width="5%">7</td><td  width="9%">PH 117</td><td>Physics Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                          <tr><td width="5%">8</td><td  width="9%">BB 101</td><td>Biology</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                          <tr><td width="5%">9</td><td  width="9%">NO 102</td><td>National Sports Organisation</td><td width="5%">0</td><td width="5%">0</td><td width="5%">0</td><td width="5%">P/NP</td></tr>
+                          <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">11.5</td><td width="5%">3</td><td width="5%">8</td><td width="5%">37</td></tr></table>
+
+                          <h3 style="color:brown;">Mechanical Engineering (2016 Batch)</h3>
+
+                          <h4 style="text-align: left;">Semester III</h4>
+                          <table class="w3-table-all w3-hoverable w3-responsive">
+                            <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                            <tr><td width="5%">1</td><td  width="9%">ME 201</td><td>Mechanics of Materials</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                            <tr><td width="5%">2</td><td  width="9%">ME 209</td><td>Thermodynamics</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                            <tr><td width="5%">3</td><td  width="9%">EE 101</td><td>Introduction to Electrical and Electronic Circuits</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                            <tr><td width="5%">4</td><td  width="9%">ME 219</td><td>Fluid Mechanics</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                            <tr><td width="5%">5</td><td  width="9%">HS 101</td><td>Economics</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                            <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">13</td><td width="5%">5</td><td width="5%">3</td><td width="5%">36</td></tr></table>
+                            <h4 style="text-align: left;">Semester IV</h4>
+                            <table class="w3-table-all w3-hoverable w3-responsive">
+                              <tr><th width="5%"></th><th width="9%">Subject</th><th width="66%">Title</th><th width="5%">L</th><th width="5%">T</th><th width="5%">P</th><th width="5%">C</th></tr>
+                              <tr><td width="5%">1</td><td  width="9%">ME 207</td><td>Engineering Metallurgy</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                              <tr><td width="5%">2</td><td  width="9%">ME 226</td><td>Mechanical Measurements</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                              <tr><td width="5%">3</td><td  width="9%">ME 206</td><td>Manufacturing Processes I</td><td width="5%">2</td><td width="5%">1</td><td width="5%">0</td><td width="5%">6</td></tr>
+                              <tr><td width="5%">4</td><td  width="9%">MA 214</td><td>Numerical Analysis</td><td width="5%">3</td><td width="5%">1</td><td width="5%">0</td><td width="5%">8</td></tr>
+                              <tr><td width="5%">5</td><td  width="9%">ME 224</td><td>Fluid Mechanics Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                              <tr><td width="5%">6</td><td  width="9%">ME 218</td><td>Solid Mechanics Laboratory</td><td width="5%">0</td><td width="5%">0</td><td width="5%">3</td><td width="5%">3</td></tr>
+                              <tr><td width="5%">7</td><td  width="9%">ME 213</td><td>Manufacturing Practice Laboratory</td><td width="5%">0</td><td width="5%">1</td><td width="5%">3</td><td width="5%">5</td></tr>
+                              <tr style="font-weight: bold;"><td></td><td></td><td width="66%" style="text-align: right;">Total</td><td width="5%">9</td><td width="5%">5</td><td width="5%">9</td><td width="5%">37</td></tr></table>
+                            </div>
+                          </div>
+                        </body>
+                        </html>

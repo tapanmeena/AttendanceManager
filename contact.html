@@ -1,0 +1,111 @@
+<html>
+<link rel="icon" href="images/ico.png" type="image/icon" />
+<title>COntact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/icon1.png" type="image/icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.nav{
+  font-family: "Amatic SC", sans-serif
+}
+body{
+  margin-top: 6%;
+}
+</style>
+<body>
+  <!-- Navbar (sit on top)-->
+  <div class="nav w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+      <a href="courseoffered.html" class="w3-bar-item w3-button w3-hover-red">Course Offered</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hover-purple">ABOUT</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <a class="w3-button w3-hover-green">Sign Up</a>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a onclick="document.getElementById('id03').style.display='block'" class="w3-bar-item w3-button w3-hover-aqua">Faculty</a>
+          <a onclick="document.getElementById('id04').style.display='block'" class="w3-bar-item w3-button w3-hover-pink">Student</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body style="background-color:teal">
+    <!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5" style="text-align:center">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar" >Contact Us</span></div>
+    <h3>Address</h3>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;fyN&amp;Zoro &commat; IIT Dharwad, Karnataka, India</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+91 9481243966, +91 7251910752</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;160010006@iitdh.ac.in, 160010039@iitdh.ac.in</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="googleMap" style="width:100%;height:500px;"></div>
+<script>
+      function initMap() {
+        var uluru = {lat:15.5253143,lng:74.9247227};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCePcj7SenrrrMNGXi7MXuCseHJmYLxX9o&amp;callback=initMap">
+    </script>
+
+<style>
+.a{
+  padding: 20px;
+  font-size: 30px;
+  width: 5 0px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+</style>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="a w3-button w3-large " style="background:#3B5998"href="https://www.facebook.com/Lokesh386" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="a w3-button w3-large " style="background:#dd4b39"href="https://plus.google.com/113006001537256986945" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="a w3-button w3-large " style="background:#55ACEE"href="https://twitter.com/LoksLvFootball" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="a w3-button w3-large"style="background:#125688" href="https://www.instagram.com/18tapan._.meena/" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="a w3-button w3-large w3-hide-small" style="background:#007bb5"href="https://www.linkedin.com/in/tapan-meena-3439bb152/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <a class="a w3-button w3-large w3-hide-small w3-purple" href="https://www.github.com/tapanmeena" title="GitHub"><i class="fa fa-github"></i></a>
+
+  <footer class="w3-container w3-center w3-opacity">
+  <p>&copy; Copyright 2020 &commat;fyN&amp;Zoro. All rights are reserved.</p>
+</footer>
+</footer>
+  </body>
+</html>
